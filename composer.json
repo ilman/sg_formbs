@@ -1,0 +1,23 @@
+{
+    "name": "scienceguard/sg_form",
+    "description": "Basic form builder",
+    "license": "MIT",
+    "keywords": ["form"],
+    "authors": [
+        {
+            "name": "Ilman Maulana",
+            "email": "ilman.maulana@gmail.com"
+        }
+    ],
+    "require": {
+        "scienceguard/sg_util": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Scienceguard\\": "src"
+        }
+    }
+}
