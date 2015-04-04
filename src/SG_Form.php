@@ -172,6 +172,7 @@ class SG_Form{
 					$option['value'] = (isset($option['value'])) ? $option['value'] : $option['label'];
 					
 					$field_attr['value'] = $option['value'];
+					$temp = $field_attr;
 					$field_attr = SG_Util::setNull($field_attr,'id');
 					$field_attr = SG_Util::setNull($field_attr,'class');
 					$param_attr = self::inlineAttr($field_attr);
@@ -181,7 +182,9 @@ class SG_Form{
 					$output .= '<label class="'.$this_class.'">';
 					$output .= '<input type="checkbox" '.trim($param_attr).'/> ';
 					$output .= $option['label'];
-					$output .= '</label> ';  
+					$output .= '</label> ';
+
+					$field_attr = $temp;
 				}  
 			break;
 			
