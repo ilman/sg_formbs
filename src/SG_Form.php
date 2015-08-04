@@ -64,10 +64,13 @@ class SG_Form{
 			break;
 			
 			case 'text':
+			case 'email':
+			case 'color':
+			case 'password':
 				$field_attr['value'] = $value;
 				$param_attr = self::inlineAttr($field_attr);
 				$param_attr .= ($event_attr) ? ' '.$event_attr : '';
-				$output .= '<input type="text" '.trim($param_attr).'/> ';
+				$output .= '<input type="'.$field_type.'" '.trim($param_attr).'/> ';
 			break;
 
 			case 'hidden':
@@ -263,9 +266,6 @@ class SG_Form{
 		}
 		
 		if($option!==false){
-			if($value===0){ $value='0'; }
-			if($option===0){ $option='0'; }
-
 			if($value==$option){ return $return; }
 		}
 	} 
