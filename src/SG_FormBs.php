@@ -124,7 +124,7 @@ class SG_FormBs{
 				$output .= '<div class="sgtb-input-group input-file-upload">';
 				$output .= '<input type="text" '.trim($param_attr).'>';
 				$output .= '<span class="sgtb-input-group-btn">';
-				$output .= '<button class="sgtb-btn sgtb-btn-default file-upload-btn" id="'.$field_attr['id']
+				$output .= '<button class="sgtb-btn sgtb-btn-default media-upload-btn" id="'.$field_attr['id']
 
 .'-upload">Upload</button>';
 				$output .= '</span>';
